@@ -129,9 +129,9 @@ class TableViewController: UITableViewController {
         customUIRefreshControl.alpha = 1.0
         
         // Three examples. Uncomment / comment to check all of them:
-        //animateCloudUpAndDown()
+        animateCloudUpAndDown()
         //animateCloudStrokeWithGradientFill()
-        animateCloudStrokeWithSolidFill()
+        //animateCloudStrokeWithSolidFill()
     }
     
     private func stopAnimations() {

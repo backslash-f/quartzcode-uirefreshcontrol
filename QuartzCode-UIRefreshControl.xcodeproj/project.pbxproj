@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420C140E1CE2B83400FF6754 /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C140D1CE2B83400FF6754 /* QCMethod.swift */; };
+		420C14131CE2B94600FF6754 /* CustomUIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C14121CE2B94600FF6754 /* CustomUIRefreshControl.swift */; };
 		42190C9F1CE2852E0076F6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190C9E1CE2852E0076F6BA /* AppDelegate.swift */; };
 		42190CA11CE2852E0076F6BA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190CA01CE2852E0076F6BA /* TableViewController.swift */; };
 		42190CA41CE2852E0076F6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42190CA21CE2852E0076F6BA /* Main.storyboard */; };
 		42190CA61CE2852E0076F6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42190CA51CE2852E0076F6BA /* Assets.xcassets */; };
-		42190CB61CE286890076F6BA /* CustomUIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190CB51CE286890076F6BA /* CustomUIRefreshControl.swift */; };
-		42190CB81CE286930076F6BA /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190CB71CE286930076F6BA /* QCMethod.swift */; };
 		42190CBB1CE2AD8A0076F6BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42190CB91CE2AD8A0076F6BA /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420C140D1CE2B83400FF6754 /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
+		420C14121CE2B94600FF6754 /* CustomUIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUIRefreshControl.swift; path = "QuartzCode-UIRefreshControl/View/CustomUIRefreshControl.swift"; sourceTree = "<group>"; };
 		42190C9B1CE2852D0076F6BA /* QuartzCode-UIRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuartzCode-UIRefreshControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42190C9E1CE2852E0076F6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42190CA01CE2852E0076F6BA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		42190CA31CE2852E0076F6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42190CA51CE2852E0076F6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42190CAA1CE2852E0076F6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42190CB51CE286890076F6BA /* CustomUIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUIRefreshControl.swift; path = ../../../../../../Desktop/CustomUIRefreshControl.swift; sourceTree = "<group>"; };
-		42190CB71CE286930076F6BA /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QCMethod.swift; path = ../../../../../../Desktop/QCMethod.swift; sourceTree = "<group>"; };
 		42190CBA1CE2AD8A0076F6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,11 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420C14111CE2B93800FF6754 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				420C14121CE2B94600FF6754 /* CustomUIRefreshControl.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		42190C921CE2852D0076F6BA = {
 			isa = PBXGroup;
 			children = (
+				42190CB01CE285610076F6BA /* Model */,
+				420C14111CE2B93800FF6754 /* View */,
+				42190CB21CE285690076F6BA /* Controller */,
+				42190CB41CE285820076F6BA /* Storyboard */,
+				42190CB31CE2856D0076F6BA /* Supporting Files */,
 				42190C9C1CE2852D0076F6BA /* Products */,
-				42190C9D1CE2852E0076F6BA /* QuartzCode-UIRefreshControl */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,31 +67,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42190C9D1CE2852E0076F6BA /* QuartzCode-UIRefreshControl */ = {
-			isa = PBXGroup;
-			children = (
-				42190CB21CE285690076F6BA /* Controller */,
-				42190CB01CE285610076F6BA /* Model */,
-				42190CB41CE285820076F6BA /* Storyboard */,
-				42190CB31CE2856D0076F6BA /* Supporting Files */,
-				42190CB11CE285650076F6BA /* View */,
-			);
-			path = "QuartzCode-UIRefreshControl";
-			sourceTree = "<group>";
-		};
 		42190CB01CE285610076F6BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		42190CB11CE285650076F6BA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				42190CB51CE286890076F6BA /* CustomUIRefreshControl.swift */,
-			);
-			path = View;
+			name = Model;
+			path = "QuartzCode-UIRefreshControl/Model";
 			sourceTree = "<group>";
 		};
 		42190CB21CE285690076F6BA /* Controller */ = {
@@ -87,7 +80,8 @@
 			children = (
 				42190CA01CE2852E0076F6BA /* TableViewController.swift */,
 			);
-			path = Controller;
+			name = Controller;
+			path = "QuartzCode-UIRefreshControl/Controller";
 			sourceTree = "<group>";
 		};
 		42190CB31CE2856D0076F6BA /* Supporting Files */ = {
@@ -96,18 +90,20 @@
 				42190C9E1CE2852E0076F6BA /* AppDelegate.swift */,
 				42190CA51CE2852E0076F6BA /* Assets.xcassets */,
 				42190CAA1CE2852E0076F6BA /* Info.plist */,
-				42190CB71CE286930076F6BA /* QCMethod.swift */,
+				420C140D1CE2B83400FF6754 /* QCMethod.swift */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
+			path = "QuartzCode-UIRefreshControl/Supporting Files";
 			sourceTree = "<group>";
 		};
 		42190CB41CE285820076F6BA /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				42190CA21CE2852E0076F6BA /* Main.storyboard */,
 				42190CB91CE2AD8A0076F6BA /* Launch Screen.storyboard */,
+				42190CA21CE2852E0076F6BA /* Main.storyboard */,
 			);
-			path = Storyboard;
+			name = Storyboard;
+			path = "QuartzCode-UIRefreshControl/Storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,10 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420C14131CE2B94600FF6754 /* CustomUIRefreshControl.swift in Sources */,
 				42190CA11CE2852E0076F6BA /* TableViewController.swift in Sources */,
+				420C140E1CE2B83400FF6754 /* QCMethod.swift in Sources */,
 				42190C9F1CE2852E0076F6BA /* AppDelegate.swift in Sources */,
-				42190CB81CE286930076F6BA /* QCMethod.swift in Sources */,
-				42190CB61CE286890076F6BA /* CustomUIRefreshControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +202,7 @@
 				42190CBA1CE2AD8A0076F6BA /* Base */,
 			);
 			name = "Launch Screen.storyboard";
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
