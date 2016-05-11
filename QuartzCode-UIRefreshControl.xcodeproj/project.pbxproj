@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42190C9F1CE2852E0076F6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190C9E1CE2852E0076F6BA /* AppDelegate.swift */; };
+		42190CA11CE2852E0076F6BA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190CA01CE2852E0076F6BA /* TableViewController.swift */; };
+		42190CA41CE2852E0076F6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42190CA21CE2852E0076F6BA /* Main.storyboard */; };
+		42190CA61CE2852E0076F6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42190CA51CE2852E0076F6BA /* Assets.xcassets */; };
+		42190CB61CE286890076F6BA /* CustomUIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190CB51CE286890076F6BA /* CustomUIRefreshControl.swift */; };
+		42190CB81CE286930076F6BA /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190CB71CE286930076F6BA /* QCMethod.swift */; };
+		42190CBB1CE2AD8A0076F6BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42190CB91CE2AD8A0076F6BA /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42190C9B1CE2852D0076F6BA /* QuartzCode-UIRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuartzCode-UIRefreshControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42190C9E1CE2852E0076F6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42190CA01CE2852E0076F6BA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		42190CA31CE2852E0076F6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42190CA51CE2852E0076F6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42190CAA1CE2852E0076F6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42190CB51CE286890076F6BA /* CustomUIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUIRefreshControl.swift; path = ../../../../../../Desktop/CustomUIRefreshControl.swift; sourceTree = "<group>"; };
+		42190CB71CE286930076F6BA /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QCMethod.swift; path = ../../../../../../Desktop/QCMethod.swift; sourceTree = "<group>"; };
+		42190CBA1CE2AD8A0076F6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42190C981CE2852D0076F6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42190C921CE2852D0076F6BA = {
+			isa = PBXGroup;
+			children = (
+				42190C9C1CE2852D0076F6BA /* Products */,
+				42190C9D1CE2852E0076F6BA /* QuartzCode-UIRefreshControl */,
+			);
+			sourceTree = "<group>";
+		};
+		42190C9C1CE2852D0076F6BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42190C9B1CE2852D0076F6BA /* QuartzCode-UIRefreshControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42190C9D1CE2852E0076F6BA /* QuartzCode-UIRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				42190CB21CE285690076F6BA /* Controller */,
+				42190CB01CE285610076F6BA /* Model */,
+				42190CB41CE285820076F6BA /* Storyboard */,
+				42190CB31CE2856D0076F6BA /* Supporting Files */,
+				42190CB11CE285650076F6BA /* View */,
+			);
+			path = "QuartzCode-UIRefreshControl";
+			sourceTree = "<group>";
+		};
+		42190CB01CE285610076F6BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42190CB11CE285650076F6BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42190CB51CE286890076F6BA /* CustomUIRefreshControl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42190CB21CE285690076F6BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42190CA01CE2852E0076F6BA /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42190CB31CE2856D0076F6BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42190C9E1CE2852E0076F6BA /* AppDelegate.swift */,
+				42190CA51CE2852E0076F6BA /* Assets.xcassets */,
+				42190CAA1CE2852E0076F6BA /* Info.plist */,
+				42190CB71CE286930076F6BA /* QCMethod.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42190CB41CE285820076F6BA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				42190CA21CE2852E0076F6BA /* Main.storyboard */,
+				42190CB91CE2AD8A0076F6BA /* Launch Screen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42190C9A1CE2852D0076F6BA /* QuartzCode-UIRefreshControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42190CAD1CE2852E0076F6BA /* Build configuration list for PBXNativeTarget "QuartzCode-UIRefreshControl" */;
+			buildPhases = (
+				42190C971CE2852D0076F6BA /* Sources */,
+				42190C981CE2852D0076F6BA /* Frameworks */,
+				42190C991CE2852D0076F6BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuartzCode-UIRefreshControl";
+			productName = "QuartzCode-UIRefreshControl";
+			productReference = 42190C9B1CE2852D0076F6BA /* QuartzCode-UIRefreshControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42190C931CE2852D0076F6BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Fabric;
+				TargetAttributes = {
+					42190C9A1CE2852D0076F6BA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 42190C961CE2852D0076F6BA /* Build configuration list for PBXProject "QuartzCode-UIRefreshControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42190C921CE2852D0076F6BA;
+			productRefGroup = 42190C9C1CE2852D0076F6BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42190C9A1CE2852D0076F6BA /* QuartzCode-UIRefreshControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42190C991CE2852D0076F6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42190CBB1CE2AD8A0076F6BA /* Launch Screen.storyboard in Resources */,
+				42190CA61CE2852E0076F6BA /* Assets.xcassets in Resources */,
+				42190CA41CE2852E0076F6BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42190C971CE2852D0076F6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42190CA11CE2852E0076F6BA /* TableViewController.swift in Sources */,
+				42190C9F1CE2852E0076F6BA /* AppDelegate.swift in Sources */,
+				42190CB81CE286930076F6BA /* QCMethod.swift in Sources */,
+				42190CB61CE286890076F6BA /* CustomUIRefreshControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42190CA21CE2852E0076F6BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42190CA31CE2852E0076F6BA /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		42190CB91CE2AD8A0076F6BA /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42190CBA1CE2AD8A0076F6BA /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42190CAB1CE2852E0076F6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42190CAC1CE2852E0076F6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42190CAE1CE2852E0076F6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "QuartzCode-UIRefreshControl/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fabric.QuartzCode-UIRefreshControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42190CAF1CE2852E0076F6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "QuartzCode-UIRefreshControl/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fabric.QuartzCode-UIRefreshControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42190C961CE2852D0076F6BA /* Build configuration list for PBXProject "QuartzCode-UIRefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42190CAB1CE2852E0076F6BA /* Debug */,
+				42190CAC1CE2852E0076F6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42190CAD1CE2852E0076F6BA /* Build configuration list for PBXNativeTarget "QuartzCode-UIRefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42190CAE1CE2852E0076F6BA /* Debug */,
+				42190CAF1CE2852E0076F6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42190C931CE2852D0076F6BA /* Project object */;
+}
