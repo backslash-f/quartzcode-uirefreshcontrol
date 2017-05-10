@@ -54,7 +54,7 @@ class TableViewController: UITableViewController {
         // In this "demo", the refresh will last 5.0 seconds.
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             
-            // Do something with the retrieve data...
+            // Do something with the retrieved data...
             // TODO
             
             // ... then end the refresh operation.
