@@ -57,7 +57,7 @@ class TableViewController: UITableViewController {
             // Do something with the retrieve data...
             // TODO
             
-            // ... Then end the refresh operation.
+            // ... then end the refresh operation.
             self.refreshControl?.endRefreshing()
             
             // Stop animations.
@@ -113,7 +113,7 @@ fileprivate extension TableViewController {
         customUIRefreshControl.removeAllAnimations()
     }
     
-    // Three examples. Uncomment / comment to check all of them.
+    /// Three examples. Uncomment / comment to check all of them.
     func animate() {
         
         // Example 01.
