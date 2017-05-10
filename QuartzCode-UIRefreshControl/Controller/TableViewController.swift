@@ -3,7 +3,7 @@
 //  QuartzCode-UIRefreshControl
 //
 //  Created by Fernando Fernandes on 5/10/16.
-//  Copyright © 2016 Fabric. All rights reserved.
+//  Copyright © 2016 backslash-f. All rights reserved.
 //
 
 import Foundation
@@ -13,11 +13,10 @@ class TableViewController: UITableViewController {
     
     // MARK: - Properties
     
+    var scrollView: UIScrollView!
+    
     // Reference to the original UIRefreshControl of this TableView.
     @IBOutlet weak var originalRefreshControl: UIRefreshControl!
-    
-    // Reference to the UIScrollView got from
-    var scrollView: UIScrollView!
     
     // Lazy reference to the custom UIRefreshControl made in QuartzCode.
     lazy var customUIRefreshControl: CustomUIRefreshControl = {
@@ -36,13 +35,10 @@ class TableViewController: UITableViewController {
         let customRefreshControlIconYPosition: CGFloat = refreshControlContainerHeight / 2.0 - 1 // -1, otherwise it cuts the cloud's bottom a little bit :(
         
         // Return it.
-        return CustomUIRefreshControl(frame: CGRectMake(
-            customRefreshControlIconXPosition,
-            customRefreshControlIconYPosition,
-            customRefreshControlIconWidth,
-            customRefreshControlIconHeight
-            )
-        )
+        return CustomUIRefreshControl(frame: CGRect(x: customRefreshControlIconXPosition,
+                                                    y: customRefreshControlIconYPosition,
+                                                    width: customRefreshControlIconWidth,
+                                                    height: customRefreshControlIconHeight))
     }()
     
     // Helper to control the animation logic.
@@ -50,7 +46,7 @@ class TableViewController: UITableViewController {
     
     // MARK: - Lifecycle
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupCustomRefreshControl()
     }
@@ -60,14 +56,14 @@ class TableViewController: UITableViewController {
     /// Called everytime the original refresh control's value changes.
     ///
     /// - parameter sender: The original UIRefreshControl of this TableView.
-    @IBAction func refresh(sender: UIRefreshControl) {
+    @IBAction func refresh(_ sender: UIRefreshControl) {
         
         // In this "demo", the refresh will last 6.0 seconds.
         let delayInSeconds: Int64 = 6
         
-        let popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * Int64(NSEC_PER_SEC))
+        let popTime = DispatchTime.now() + Double(delayInSeconds * Int64(NSEC_PER_SEC)) / Double(NSEC_PER_SEC)
         
-        dispatch_after(popTime, dispatch_get_main_queue()) {
+        DispatchQueue.main.asyncAfter(deadline: popTime) {
             
             // Do something with the retrieve data...
             // TODO
@@ -76,7 +72,7 @@ class TableViewController: UITableViewController {
             self.originalRefreshControl.endRefreshing()
             
             // Re-enable pull down to refresh.
-            self.scrollView.scrollEnabled = true
+            self.scrollView.isScrollEnabled = true
             
             // Stop animations.
             self.stopAnimations()
@@ -85,13 +81,13 @@ class TableViewController: UITableViewController {
     
     // MARK: - Scroll View Delegate
     
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         // Update our scroll view reference.
         self.scrollView = scrollView
         
         // If a refresh is already in place, do not mess up with alpha values
-        if (!originalRefreshControl.refreshing) {
+        if (!originalRefreshControl.isRefreshing) {
             
             // Distance the table has been pulled >= 0.
             let pullDistance: CGFloat = max(0.0, -originalRefreshControl.frame.origin.y)
@@ -110,20 +106,20 @@ class TableViewController: UITableViewController {
     
     // MARK: - Helpers
     
-    private func setupCustomRefreshControl() {
+    fileprivate func setupCustomRefreshControl() {
         
         // Hide the original UIRefreshControl...
-        originalRefreshControl.tintColor = UIColor.clearColor()
+        originalRefreshControl.tintColor = UIColor.clear
         
         // ... and ddd the custom refresh control instead:
         originalRefreshControl.addSubview(customUIRefreshControl)
     }
     
-    private func animate() {
+    fileprivate func animate() {
         isAnimating = true
         
         // Disable scrolling when refreshing for a better experience.
-        scrollView.scrollEnabled = false
+        scrollView.isScrollEnabled = false
         
         // Just to make sure that the icon is fully visible on the screen.
         customUIRefreshControl.alpha = 1.0
@@ -134,7 +130,7 @@ class TableViewController: UITableViewController {
         //animateCloudStrokeWithSolidFill()
     }
     
-    private func stopAnimations() {
+    fileprivate func stopAnimations() {
         customUIRefreshControl.removeAllAnimations()
         isAnimating = false
     }
@@ -142,19 +138,19 @@ class TableViewController: UITableViewController {
     // MARK: - Animation Examples
     
     /// Animates the cloud up and down.
-    private func animateCloudUpAndDown() {
+    fileprivate func animateCloudUpAndDown() {
         customUIRefreshControl.addRefreshUpDownAnimation()
     }
     
     /// "Draws" the cloud by make its stroke line gradually visible, then shows
     /// a solid blueish background and then fades everything out.
-    private func animateCloudStrokeWithGradientFill() {
+    fileprivate func animateCloudStrokeWithGradientFill() {
         customUIRefreshControl.addRefreshGradientAnimation()
     }
     
     /// "Draws" the cloud by make its stroke line gradually visible, then shows
     /// a gradient blueish background and then fades everything out.
-    private func animateCloudStrokeWithSolidFill() {
+    fileprivate func animateCloudStrokeWithSolidFill() {
         customUIRefreshControl.addRefreshSolidAnimation()
     }
 }
