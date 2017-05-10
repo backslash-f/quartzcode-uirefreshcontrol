@@ -1,7 +1,8 @@
 # quartzcode-uirefreshcontrol
-Examples on how to use QuartzCode to create custom UIRefreshControls.  
-The QuartzCode project used [is also available.](https://github.com/Conaaando/quartzcode-uirefreshcontrol/blob/master/QuartzCode-Project/CloudAnimation.qc)  
-(Check [this SO question](http://stackoverflow.com/a/37162261/584548) too).
+Examples on how to use [QuartzCode](http://www.quartzcodeapp.com) to create a custom UIRefreshControl.  
+([QuartzCode project available.](https://github.com/backslash-f/quartzcode-uirefreshcontrol/blob/master/QuartzCode-Project/CloudAnimation.qc))  
+(Check [this SO question](http://stackoverflow.com/a/37162261/584548) too.)  
+[Click here to see the video.](http://cl.ly/2t0i0u0G2V12)
 
 **Example 01: Animate cloud stroke with gradient fill**
 
@@ -14,5 +15,3 @@ The QuartzCode project used [is also available.](https://github.com/Conaaando/qu
 **Example 03: Animate cloud up and down**
 
 [![Animate cloud up and down](https://github.com/Conaaando/quartzcode-uirefreshcontrol/blob/master/Demo/AnimateCloudUpAndDown.gif)](http://cl.ly/2t0i0u0G2V12)
-
-[Click here to see the video.](http://cl.ly/2t0i0u0G2V12)
