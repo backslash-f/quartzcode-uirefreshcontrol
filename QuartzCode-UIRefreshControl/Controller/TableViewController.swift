@@ -85,7 +85,7 @@ extension TableViewController {
         }
         
         // Distance the table has been pulled >= 0.
-        let pullDistance: CGFloat = max(0.0, refreshControl!.frame.origin.y.negated())
+        let pullDistance: CGFloat = max(0.0, -refreshControl!.frame.origin.y)
         
         // Calculate the pull ratio, between 0.0-1.0.
         let pullRatio: CGFloat = min(max(pullDistance, 0.0), 100.0) / 100.0
@@ -117,13 +117,13 @@ fileprivate extension TableViewController {
     func animate() {
         
         // Example 01.
-        animateCloudUpAndDown()
+        //animateCloudUpAndDown()
         
         // Example 02.
         //animateCloudStrokeWithGradientFill()
         
         // Example 03.
-        //animateCloudStrokeWithSolidFill()
+        animateCloudStrokeWithSolidFill()
     }
     
     // MARK: - Animation Examples

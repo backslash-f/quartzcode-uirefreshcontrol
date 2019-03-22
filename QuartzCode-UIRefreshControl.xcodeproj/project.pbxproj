@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C839A82244FFC100552753 /* CustomUIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C839A72244FFC100552753 /* CustomUIRefreshControl.swift */; };
 		420C140E1CE2B83400FF6754 /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C140D1CE2B83400FF6754 /* QCMethod.swift */; };
-		420C14131CE2B94600FF6754 /* CustomUIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C14121CE2B94600FF6754 /* CustomUIRefreshControl.swift */; };
 		42190C9F1CE2852E0076F6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190C9E1CE2852E0076F6BA /* AppDelegate.swift */; };
 		42190CA11CE2852E0076F6BA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42190CA01CE2852E0076F6BA /* TableViewController.swift */; };
 		42190CA41CE2852E0076F6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42190CA21CE2852E0076F6BA /* Main.storyboard */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07C839A72244FFC100552753 /* CustomUIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUIRefreshControl.swift; path = "QuartzCode-UIRefreshControl/View/CustomUIRefreshControl.swift"; sourceTree = "<group>"; };
 		420C140D1CE2B83400FF6754 /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
-		420C14121CE2B94600FF6754 /* CustomUIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUIRefreshControl.swift; path = "QuartzCode-UIRefreshControl/View/CustomUIRefreshControl.swift"; sourceTree = "<group>"; };
 		42190C9B1CE2852D0076F6BA /* QuartzCode-UIRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuartzCode-UIRefreshControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42190C9E1CE2852E0076F6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42190CA01CE2852E0076F6BA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		420C14111CE2B93800FF6754 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				420C14121CE2B94600FF6754 /* CustomUIRefreshControl.swift */,
+				07C839A72244FFC100552753 /* CustomUIRefreshControl.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -133,8 +133,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = Fabric;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "backslash-f";
 				TargetAttributes = {
 					42190C9A1CE2852D0076F6BA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420C14131CE2B94600FF6754 /* CustomUIRefreshControl.swift in Sources */,
+				07C839A82244FFC100552753 /* CustomUIRefreshControl.swift in Sources */,
 				42190CA11CE2852E0076F6BA /* TableViewController.swift in Sources */,
 				420C140E1CE2B83400FF6754 /* QCMethod.swift in Sources */,
 				42190C9F1CE2852E0076F6BA /* AppDelegate.swift in Sources */,
@@ -219,14 +219,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -266,14 +274,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -307,7 +323,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.backslash-f.UIRefreshControl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -320,7 +336,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.backslash-f.UIRefreshControl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
